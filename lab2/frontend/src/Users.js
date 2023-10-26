@@ -1,19 +1,20 @@
-import { useEffect, useState } from 'react';
-import { useUser } from "./UserContext";
-import { useSocket } from "./SocketContext";
-import { usePrivateChat } from "./PrivateChatContext";
-export default function Users(){
-    const socket = useSocket();
+import {useEffect, useState} from 'react';
+import {useUser} from "./UserContext";
+import {useSocket} from "./SocketContext";
+import {usePrivateChat} from "./PrivateChatContext";
+
+export default function Users() {
+    const {socket} = useSocket();
     const [connectedUsers, setConnectedUsers] = useState([]);
-    const { openChat } = usePrivateChat();
-    const { user } = useUser();
+    const {openChat} = usePrivateChat();
+    const {user} = useUser();
 
     useEffect(() => {
         if (!socket) return;
         socket.on('users', (users) => {
             setConnectedUsers(users);
         });
-    } , [socket, connectedUsers]);
+    }, [socket, connectedUsers]);
 
     return (
         <div style={{
@@ -40,10 +41,17 @@ export default function Users(){
                             openChat(chatId);
                         }}
                         style={{
-                        textAlign: connectedUser.userId === user.id ? 'right' : 'left',
-                        padding: '0.5rem',
-                        borderBottom: '1px solid #ccc'
-                    }}>{connectedUser.userId}</li>
+                            textAlign: connectedUser.userId === user.id ? 'right' : 'left',
+                            padding: '0.5rem',
+                            borderBottom: '1px solid #ccc'
+                        }}>
+                        <p>
+                        {connectedUser.userId}
+                        </p>
+                        <p>
+                            {connectedUser.status}
+                        </p>
+                    </li>
                 ))}
             </ul>
         </div>

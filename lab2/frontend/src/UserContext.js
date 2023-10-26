@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import {createContext, useContext, useEffect, useState} from 'react';
+import {v4 as uuidv4} from 'uuid';
 
 const UserContext = createContext();
 
@@ -7,7 +7,7 @@ export const useUser = () => {
     return useContext(UserContext);
 }
 
-export const UserProvider = ({ children }) => {
+export const UserProvider = ({children}) => {
     const [user, setUser] = useState();
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export const UserProvider = ({ children }) => {
     }, []);
 
     return (
-        <UserContext.Provider value={{ user, setUser }}>
+        <UserContext.Provider value={{user, setUser}}>
             {children}
         </UserContext.Provider>
     )

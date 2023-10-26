@@ -1,4 +1,5 @@
 import {schedule} from "../../../../mocks/plan";
+
 /**
  * @param {Request} _req
  * @param {Response} res

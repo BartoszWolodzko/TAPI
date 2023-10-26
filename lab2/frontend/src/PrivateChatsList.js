@@ -1,8 +1,8 @@
-import { usePrivateChat} from "./PrivateChatContext";
+import {usePrivateChat} from "./PrivateChatContext";
 import PrivateChat from "./PrivateChat";
 
 export default function PrivateChatsList() {
-    const { openedChats } = usePrivateChat();
+    const {openedChats} = usePrivateChat();
 
     console.log(openedChats);
     return (
@@ -11,7 +11,7 @@ export default function PrivateChatsList() {
             <ul>
                 {openedChats.map(chat => (
                     <li key={chat.chatId}>
-                        <PrivateChat chat={chat} />
+                        <PrivateChat chat={chat}/>
                     </li>
                 ))}
             </ul>

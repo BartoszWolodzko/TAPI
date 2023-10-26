@@ -1,0 +1,332 @@
+[
+  {
+    "id": 19,
+    "name": "Arkady",
+    "surname": "Smoliński",
+    "email": "Izydor33@gmail.com",
+    "assignedCourses": [
+      9,
+      5,
+      68,
+      12,
+      0,
+      6,
+      15,
+      17,
+      25,
+      40
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Adelajda",
+    "surname": "Madej",
+    "email": "Klemens14@gmail.com",
+    "assignedCourses": [
+      22,
+      88,
+      1,
+      31,
+      48,
+      52
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Larysa",
+    "surname": "Rogowski",
+    "email": "Salwator_Cygan@yahoo.com",
+    "assignedCourses": [
+      90,
+      2,
+      13,
+      2,
+      9,
+      55,
+      59,
+      60,
+      64
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tamara",
+    "surname": "Kania",
+    "email": "Dorota.Bochenek@gmail.com",
+    "assignedCourses": [
+      60,
+      10,
+      53,
+      61,
+      42,
+      3,
+      26,
+      56,
+      66,
+      76,
+      79,
+      85
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Stella",
+    "surname": "Ziętek",
+    "email": "Elwira.Kopec42@yahoo.com",
+    "assignedCourses": [
+      62,
+      44,
+      4,
+      13,
+      21,
+      29,
+      49,
+      67,
+      83,
+      89
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Filipa",
+    "surname": "Masłowski",
+    "email": "Samson_Wieczorek41@gmail.com",
+    "assignedCourses": [
+      11,
+      64,
+      22,
+      58,
+      5,
+      28,
+      42,
+      57,
+      93
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Maurycy",
+    "surname": "Majcher",
+    "email": "Jeremiasz_Goral20@gmail.com",
+    "assignedCourses": [
+      2,
+      67,
+      43,
+      99,
+      57,
+      7,
+      10,
+      35,
+      38,
+      46,
+      71,
+      88,
+      95
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sara",
+    "surname": "Fijałkowski",
+    "email": "Liza.Cichy92@yahoo.com",
+    "assignedCourses": [
+      3,
+      31,
+      83,
+      31,
+      8,
+      19,
+      33,
+      84,
+      92,
+      97,
+      99
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bruno",
+    "surname": "Sienkiewicz",
+    "email": "Stella.Bujak35@yahoo.com",
+    "assignedCourses": [
+      4,
+      91,
+      30,
+      4,
+      9,
+      11,
+      62,
+      65,
+      90
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Damian",
+    "surname": "Augustyniak",
+    "email": "Miron.Fratczak10@hotmail.com",
+    "assignedCourses": [
+      23,
+      2,
+      90,
+      12,
+      58,
+      75
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Edyta",
+    "surname": "Urban",
+    "email": "Ryszard.Knapik8@hotmail.com",
+    "assignedCourses": [
+      40,
+      77,
+      36,
+      52,
+      14,
+      18,
+      27,
+      51,
+      78,
+      87,
+      94
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Witalis",
+    "surname": "Michalak",
+    "email": "Cyra_Tomaszewski@hotmail.com",
+    "assignedCourses": [
+      22,
+      15,
+      98,
+      23,
+      16,
+      30,
+      44,
+      54,
+      69
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Anna",
+    "surname": "Sołtysiak",
+    "email": "Gerald_8xukasik@hotmail.com",
+    "assignedCourses": [
+      54,
+      27,
+      51,
+      20,
+      39,
+      45,
+      47,
+      73,
+      74,
+      91,
+      96
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Jadwiga",
+    "surname": "Rudziński",
+    "email": "Walgierz.Czarnecki23@gmail.com",
+    "assignedCourses": [
+      40,
+      19,
+      22,
+      37,
+      53,
+      70
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Konstanty",
+    "surname": "Sokół",
+    "email": "Micha8y30@gmail.com",
+    "assignedCourses": [
+      96,
+      23,
+      23,
+      24,
+      32,
+      82
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Edyta",
+    "surname": "Marek",
+    "email": "Amanda36@gmail.com",
+    "assignedCourses": [
+      23,
+      16,
+      69,
+      66,
+      34,
+      68,
+      80,
+      81,
+      86
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Prokul",
+    "surname": "Gutowski",
+    "email": "Sergiusz97@hotmail.com",
+    "assignedCourses": [
+      46,
+      76,
+      61,
+      61,
+      78,
+      36,
+      61,
+      72
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jerzy",
+    "surname": "Banasik",
+    "email": "Walgierz.Zagorski@yahoo.com",
+    "assignedCourses": [
+      34,
+      16,
+      21,
+      41
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Prokles",
+    "surname": "Bagiński",
+    "email": "Klaudia.Kuchta58@hotmail.com",
+    "assignedCourses": [
+      3,
+      20,
+      43,
+      63
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Lilla",
+    "surname": "Witek",
+    "email": "Wilfryd.Zalewski@hotmail.com",
+    "assignedCourses": [
+      70,
+      96,
+      38,
+      68,
+      50,
+      77,
+      98
+    ]
+  }
+]

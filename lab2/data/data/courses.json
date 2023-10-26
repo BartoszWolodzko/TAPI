@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 0,
+    "name": "PSV",
+    "description": "Nulla corrupti illum vel error deserunt suscipit. Magnam debitis ipsa delectus tempora suscipit. Minus placeat voluptatum iusto excepturi nisi.",
+    "lecturer": 19,
+    "group": 5,
+    "room": "030",
+    "date": {
+      "start": "2024-05-14T04:45:00.000Z",
+      "end": "2024-05-14T06:15:00.000Z"
+    }
+  },
+  {
+    "id": 1,
+    "name": "ZSY",
+    "description": "Explicabo aliquam repellat. Consectetur et aliquid qui. Nostrum est aliquid earum atque illum.",
+    "lecturer": 9,
+    "group": 2,
+    "room": "652",
+    "date": {
+      "start": "2024-03-27T02:15:00.000Z",
+      "end": "2024-03-27T03:45:00.000Z"
+    }
+  },
+  {
+    "id": 2,
+    "name": "EAY",
+    "description": "Tenetur iure odio autem ad veniam quia. Rerum natus dicta magnam. Modi culpa error facere voluptatum fuga.",
+    "lecturer": 3,
+    "group": 3,
+    "room": "551",
+    "date": {
+      "start": "2024-04-03T00:30:00.000Z",
+      "end": "2024-04-03T02:00:00.000Z"
+    }
+  },
+  {
+    "id": 3,
+    "name": "BSV",
+    "description": "Sunt praesentium excepturi debitis iure. Perferendis sunt doloremque neque non eaque quasi reprehenderit quidem voluptatem. Esse voluptate mollitia ipsum.",
+    "lecturer": 6,
+    "group": 2,
+    "room": "645",
+    "date": {
+      "start": "2024-05-14T22:00:00.000Z",
+      "end": "2024-05-14T23:30:00.000Z"
+    }
+  },
+  {
+    "id": 4,
+    "name": "XOE",
+    "description": "Fugiat distinctio omnis quidem perspiciatis ipsum odit voluptatibus dolor consequatur. Numquam saepe iure culpa quo alias sequi sint. Corporis maiores unde consequuntur nisi perspiciatis placeat consequatur iste.",
+    "lecturer": 8,
+    "group": 2,
+    "room": "069",
+    "date": {
+      "start": "2024-10-13T20:15:00.000Z",
+      "end": "2024-10-13T21:45:00.000Z"
+    }
+  },
+  {
+    "id": 5,
+    "name": "BWV",
+    "description": "Nemo repudiandae maiores odio. Iste aliquid cumque. Totam odio magnam asperiores ratione.",
+    "lecturer": 17,
+    "group": 1,
+    "room": "678",
+    "date": {
+      "start": "2024-01-15T21:45:00.000Z",
+      "end": "2024-01-15T23:15:00.000Z"
+    }
+  },
+  {
+    "id": 6,
+    "name": "YIF",
+    "description": "Quae doloremque ipsam beatae doloribus perspiciatis architecto voluptatum omnis. Voluptatum quis iusto error assumenda iure. Tempore laboriosam totam adipisci occaecati quia deserunt nam asperiores.",
+    "lecturer": 19,
+    "group": 5,
+    "room": "446",
+    "date": {
+      "start": "2024-09-16T18:30:00.000Z",
+      "end": "2024-09-16T20:00:00.000Z"
+    }
+  },
+  {
+    "id": 7,
+    "name": "FUI",
+    "description": "Maiores nam voluptate voluptatibus quaerat atque. Blanditiis veritatis illo autem modi. Ducimus voluptatum dolorum.",
+    "lecturer": 18,
+    "group": 5,
+    "room": "333",
+    "date": {
+      "start": "2023-11-23T17:30:00.000Z",
+      "end": "2023-11-23T19:00:00.000Z"
+    }
+  },
+  {
+    "id": 8,
+    "name": "AZG",
+    "description": "Voluptas voluptatum facere consectetur autem aut iste eum cumque. Ex rem at iusto recusandae quas. Atque rerum optio ex.",
+    "lecturer": 15,
+    "group": 5,
+    "room": "604",
+    "date": {
+      "start": "2024-09-09T16:15:00.000Z",
+      "end": "2024-09-09T17:45:00.000Z"
+    }
+  },
+  {
+    "id": 9,
+    "name": "JNM",
+    "description": "Consequatur aspernatur enim odit aut ipsum. Autem odit non odit veritatis aliquid nostrum ducimus magni enim. Voluptas a tempore doloremque reiciendis rerum rerum sint aspernatur necessitatibus.",
+    "lecturer": 3,
+    "group": 4,
+    "room": "955",
+    "date": {
+      "start": "2023-10-30T16:00:00.000Z",
+      "end": "2023-10-30T17:30:00.000Z"
+    }
+  },
+  {
+    "id": 10,
+    "name": "HAM",
+    "description": "Reprehenderit nobis repellendus ducimus cupiditate dolor sit nesciunt. Optio modi magni eius et sed fuga fuga. Facere alias quis laudantium debitis placeat nesciunt iste voluptatem nam.",
+    "lecturer": 18,
+    "group": 2,
+    "room": "795",
+    "date": {
+      "start": "2024-08-03T10:00:00.000Z",
+      "end": "2024-08-03T11:30:00.000Z"
+    }
+  },
+  {
+    "id": 11,
+    "name": "BAR",
+    "description": "Sequi nam recusandae autem beatae odio. Aut necessitatibus odio assumenda. Et illum officiis libero expedita beatae totam debitis porro nulla.",
+    "lecturer": 12,
+    "group": 1,
+    "room": "766",
+    "date": {
+      "start": "2023-12-31T16:15:00.000Z",
+      "end": "2023-12-31T17:45:00.000Z"
+    }
+  },
+  {
+    "id": 12,
+    "name": "LTW",
+    "description": "Veritatis deleniti nam aut exercitationem. Accusantium necessitatibus dolore accusantium veritatis sapiente libero aspernatur ipsam ut. Omnis doloribus hic iusto fugiat voluptates alias ratione.",
+    "lecturer": 11,
+    "group": 1,
+    "room": "594",
+    "date": {
+      "start": "2023-12-22T03:30:00.000Z",
+      "end": "2023-12-22T05:00:00.000Z"
+    }
+  },
+  {
+    "id": 13,
+    "name": "PGW",
+    "description": "Debitis delectus eos voluptatibus optio voluptate nobis omnis omnis. Minus officia laboriosam nam quis accusantium id magnam saepe. Nam fugiat nihil.",
+    "lecturer": 8,
+    "group": 3,
+    "room": "642",
+    "date": {
+      "start": "2024-08-05T17:45:00.000Z",
+      "end": "2024-08-05T19:15:00.000Z"
+    }
+  },
+  {
+    "id": 14,
+    "name": "XUR",
+    "description": "Nemo consequatur sed quaerat nesciunt sapiente dolor laudantium ad. Nemo atque atque dolor fuga. Deleniti nostrum non atque delectus consequatur sed laborum ipsum.",
+    "lecturer": 5,
+    "group": 2,
+    "room": "933",
+    "date": {
+      "start": "2024-05-01T11:15:00.000Z",
+      "end": "2024-05-01T12:45:00.000Z"
+    }
+  },
+  {
+    "id": 15,
+    "name": "VEP",
+    "description": "Vitae corporis facere. Recusandae voluptatum sit aliquam possimus. Nam vitae dolorem non at.",
+    "lecturer": 19,
+    "group": 1,
+    "room": "257",
+    "date": {
+      "start": "2024-08-31T16:45:00.000Z",
+      "end": "2024-08-31T18:15:00.000Z"
+    }
+  },
+  {
+    "id": 16,
+    "name": "INB",
+    "description": "Quaerat aperiam odit corporis facilis dolor quia. Mollitia consequuntur pariatur ab quibusdam hic fuga molestias. Inventore perspiciatis nam molestias.",
+    "lecturer": 4,
+    "group": 4,
+    "room": "232",
+    "date": {
+      "start": "2024-01-16T09:15:00.000Z",
+      "end": "2024-01-16T10:45:00.000Z"
+    }
+  },
+  {
+    "id": 17,
+    "name": "ENV",
+    "description": "Officiis ab maxime quisquam. Animi architecto officia ipsum sint similique. Nulla corporis doloremque.",
+    "lecturer": 19,
+    "group": 4,
+    "room": "058",
+    "date": {
+      "start": "2024-02-11T10:30:00.000Z",
+      "end": "2024-02-11T12:00:00.000Z"
+    }
+  },
+  {
+    "id": 18,
+    "name": "BNL",
+    "description": "Velit qui eveniet fugiat neque nobis aut est vel doloribus. Numquam illum voluptatem maiores culpa ad illum. Tempore perspiciatis perferendis labore vitae culpa magnam.",
+    "lecturer": 5,
+    "group": 4,
+    "room": "286",
+    "date": {
+      "start": "2024-06-20T06:30:00.000Z",
+      "end": "2024-06-20T08:00:00.000Z"
+    }
+  },
+  {
+    "id": 19,
+    "name": "LTK",
+    "description": "Distinctio odit numquam veniam. Veritatis doloremque laborum dicta maxime consequatur maiores maiores. Unde ipsum illum corrupti corrupti corrupti eaque consectetur.",
+    "lecturer": 15,
+    "group": 1,
+    "room": "245",
+    "date": {
+      "start": "2023-12-01T11:30:00.000Z",
+      "end": "2023-12-01T13:00:00.000Z"
+    }
+  },
+  {
+    "id": 20,
+    "name": "XXY",
+    "description": "A facere error accusantium officia harum tenetur voluptas laborum totam. Animi quibusdam sequi. Tempora porro distinctio tempore porro molestiae illum pariatur quo.",
+    "lecturer": 7,
+    "group": 1,
+    "room": "910",
+    "date": {
+      "start": "2024-05-28T13:15:00.000Z",
+      "end": "2024-05-28T14:45:00.000Z"
+    }
+  },
+  {
+    "id": 21,
+    "name": "UHR",
+    "description": "Accusantium perferendis a neque quidem eaque quia aliquam. Id quis quaerat assumenda cupiditate dolores ab quam pariatur. Aspernatur impedit eos.",
+    "lecturer": 8,
+    "group": 3,
+    "room": "489",
+    "date": {
+      "start": "2023-11-13T16:00:00.000Z",
+      "end": "2023-11-13T17:30:00.000Z"
+    }
+  },
+  {
+    "id": 22,
+    "name": "SMS",
+    "description": "Officia nulla quo dolores illum quis. Tempora consectetur harum aut dolor quam placeat maxime consequatur sed. Vitae facere et soluta at ratione reprehenderit.",
+    "lecturer": 1,
+    "group": 1,
+    "room": "739",
+    "date": {
+      "start": "2024-01-10T23:15:00.000Z",
+      "end": "2024-01-11T00:45:00.000Z"
+    }
+  },
+  {
+    "id": 23,
+    "name": "RYE",
+    "description": "Porro ut sint dolor reprehenderit fuga qui magni architecto. Ipsum natus repellendus ea vel alias. Accusamus repellat officiis alias magnam voluptatibus provident autem maiores.",
+    "lecturer": 14,
+    "group": 5,
+    "room": "705",
+    "date": {
+      "start": "2024-05-02T16:45:00.000Z",
+      "end": "2024-05-02T18:15:00.000Z"
+    }
+  },
+  {
+    "id": 24,
+    "name": "HSB",
+    "description": "Enim dolor doloribus corporis praesentium cum quisquam repellat molestiae enim. Aspernatur tempora suscipit quas ad perferendis nemo. Expedita ex necessitatibus saepe deleniti cum non incidunt.",
+    "lecturer": 14,
+    "group": 3,
+    "room": "555",
+    "date": {
+      "start": "2024-10-11T07:00:00.000Z",
+      "end": "2024-10-11T08:30:00.000Z"
+    }
+  },
+  {
+    "id": 25,
+    "name": "SPL",
+    "description": "Quasi qui eos ea sed. Eius fuga error. Dolores quas tempora nemo optio ex.",
+    "lecturer": 19,
+    "group": 1,
+    "room": "045",
+    "date": {
+      "start": "2024-09-08T11:30:00.000Z",
+      "end": "2024-09-08T13:00:00.000Z"
+    }
+  },
+  {
+    "id": 26,
+    "name": "SNH",
+    "description": "Quas quisquam architecto at beatae ratione amet tempora nobis. Facere cum iste sequi laboriosam eos. Atque dolorem ut consequatur optio vel tempora officiis.",
+    "lecturer": 6,
+    "group": 4,
+    "room": "919",
+    "date": {
+      "start": "2024-02-16T06:45:00.000Z",
+      "end": "2024-02-16T08:15:00.000Z"
+    }
+  },
+  {
+    "id": 27,
+    "name": "MVX",
+    "description": "Nihil pariatur suscipit suscipit dolore maiores quibusdam debitis. Dolorem iste soluta ex id culpa officiis exercitationem nulla facere. Alias at ullam qui alias minima ab ipsam.",
+    "lecturer": 5,
+    "group": 4,
+    "room": "911",
+    "date": {
+      "start": "2024-03-30T06:30:00.000Z",
+      "end": "2024-03-30T08:00:00.000Z"
+    }
+  },
+  {
+    "id": 28,
+    "name": "EOH",
+    "description": "Consequuntur aliquid aliquid. Enim laudantium perferendis qui odio fugiat earum a assumenda. Sint sequi debitis reiciendis nulla consectetur at sit laborum tenetur.",
+    "lecturer": 17,
+    "group": 5,
+    "room": "426",
+    "date": {
+      "start": "2024-07-18T23:15:00.000Z",
+      "end": "2024-07-19T00:45:00.000Z"
+    }
+  },
+  {
+    "id": 29,
+    "name": "UHJ",
+    "description": "Reiciendis optio dignissimos. Veniam atque veniam libero fugiat illum. Cumque laborum tempore quibusdam velit explicabo nam dolores ipsa.",
+    "lecturer": 8,
+    "group": 3,
+    "room": "561",
+    "date": {
+      "start": "2024-09-06T03:45:00.000Z",
+      "end": "2024-09-06T05:15:00.000Z"
+    }
+  },
+  {
+    "id": 30,
+    "name": "XJF",
+    "description": "Ea consequuntur deserunt delectus facilis exercitationem unde asperiores. Consectetur quidem cupiditate sit ea reprehenderit aspernatur eos corrupti non. Voluptatibus cumque illo itaque voluptatum et consectetur.",
+    "lecturer": 4,
+    "group": 2,
+    "room": "942",
+    "date": {
+      "start": "2024-06-17T23:45:00.000Z",
+      "end": "2024-06-18T01:15:00.000Z"
+    }
+  },
+  {
+    "id": 31,
+    "name": "AYI",
+    "description": "Iste doloribus deserunt neque nostrum aspernatur dolor eveniet repudiandae. Earum illo temporibus. Vitae et repellendus suscipit excepturi est velit.",
+    "lecturer": 9,
+    "group": 1,
+    "room": "071",
+    "date": {
+      "start": "2024-02-08T07:00:00.000Z",
+      "end": "2024-02-08T08:30:00.000Z"
+    }
+  },
+  {
+    "id": 32,
+    "name": "BJK",
+    "description": "Veniam a eligendi cum tempore facere ullam. Voluptate recusandae ut. Cumque perspiciatis assumenda et doloremque nostrum enim.",
+    "lecturer": 14,
+    "group": 5,
+    "room": "485",
+    "date": {
+      "start": "2024-09-04T09:00:00.000Z",
+      "end": "2024-09-04T10:30:00.000Z"
+    }
+  },
+  {
+    "id": 33,
+    "name": "RLR",
+    "description": "Repudiandae eius vitae at nobis qui. Perferendis illum a accusamus dolorum sit odio. Delectus dolor nisi delectus inventore quam exercitationem beatae consequuntur.",
+    "lecturer": 15,
+    "group": 5,
+    "room": "980",
+    "date": {
+      "start": "2024-01-25T14:00:00.000Z",
+      "end": "2024-01-25T15:30:00.000Z"
+    }
+  },
+  {
+    "id": 34,
+    "name": "FUL",
+    "description": "Autem culpa in. Architecto earum optio. Quis numquam ea ratione placeat commodi.",
+    "lecturer": 16,
+    "group": 1,
+    "room": "768",
+    "date": {
+      "start": "2023-11-09T23:00:00.000Z",
+      "end": "2023-11-10T00:30:00.000Z"
+    }
+  },
+  {
+    "id": 35,
+    "name": "LIR",
+    "description": "Velit incidunt voluptatem facere. Vitae totam similique omnis incidunt ut fuga at. Repellat quod porro aperiam ratione voluptates reiciendis dolorem.",
+    "lecturer": 18,
+    "group": 2,
+    "room": "793",
+    "date": {
+      "start": "2024-04-11T01:45:00.000Z",
+      "end": "2024-04-11T03:15:00.000Z"
+    }
+  },
+  {
+    "id": 36,
+    "name": "CPS",
+    "description": "Assumenda fugit pariatur maxime et nemo repudiandae qui odio eius. Similique maxime voluptatem eveniet tenetur nobis. Aperiam quos provident sequi cumque consectetur quam alias minus amet.",
+    "lecturer": 13,
+    "group": 2,
+    "room": "544",
+    "date": {
+      "start": "2024-07-18T18:45:00.000Z",
+      "end": "2024-07-18T20:15:00.000Z"
+    }
+  },
+  {
+    "id": 37,
+    "name": "DMN",
+    "description": "Eligendi occaecati quaerat natus. Fuga ab architecto error soluta similique ut explicabo eligendi. Minus sint similique occaecati reprehenderit.",
+    "lecturer": 1,
+    "group": 5,
+    "room": "687",
+    "date": {
+      "start": "2024-10-05T15:00:00.000Z",
+      "end": "2024-10-05T16:30:00.000Z"
+    }
+  },
+  {
+    "id": 38,
+    "name": "XWX",
+    "description": "Necessitatibus rerum ex culpa saepe omnis rem nesciunt consequuntur laboriosam. Eius assumenda illo maxime. Maxime iure deserunt iusto harum.",
+    "lecturer": 18,
+    "group": 4,
+    "room": "565",
+    "date": {
+      "start": "2024-03-15T07:45:00.000Z",
+      "end": "2024-03-15T09:15:00.000Z"
+    }
+  },
+  {
+    "id": 39,
+    "name": "AUV",
+    "description": "Nemo sunt assumenda unde unde rem ea quam amet. Harum culpa non recusandae itaque facere. Hic consectetur repudiandae nihil commodi asperiores assumenda.",
+    "lecturer": 7,
+    "group": 5,
+    "room": "263",
+    "date": {
+      "start": "2024-05-13T12:00:00.000Z",
+      "end": "2024-05-13T13:30:00.000Z"
+    }
+  },
+  {
+    "id": 40,
+    "name": "QBC",
+    "description": "Facilis labore fugit in cupiditate aliquam aspernatur rem dolores. Eveniet quo architecto fuga blanditiis maiores rem. Quibusdam facere ea facilis ut voluptatem consectetur.",
+    "lecturer": 19,
+    "group": 3,
+    "room": "491",
+    "date": {
+      "start": "2024-03-23T16:30:00.000Z",
+      "end": "2024-03-23T18:00:00.000Z"
+    }
+  },
+  {
+    "id": 41,
+    "name": "RBI",
+    "description": "Quia doloremque unde dicta recusandae unde quisquam ratione. Est rerum voluptates repellendus autem quod veniam eos ut. Qui quidem enim vero iusto laudantium.",
+    "lecturer": 2,
+    "group": 2,
+    "room": "703",
+    "date": {
+      "start": "2024-01-26T11:15:00.000Z",
+      "end": "2024-01-26T12:45:00.000Z"
+    }
+  },
+  {
+    "id": 42,
+    "name": "UYE",
+    "description": "Quo perspiciatis perspiciatis quia in quia architecto ipsa. Pariatur veniam unde fugit facilis mollitia. Ipsa reiciendis nam.",
+    "lecturer": 17,
+    "group": 5,
+    "room": "201",
+    "date": {
+      "start": "2024-03-11T14:00:00.000Z",
+      "end": "2024-03-11T15:30:00.000Z"
+    }
+  },
+  {
+    "id": 43,
+    "name": "MPC",
+    "description": "Sed adipisci dolores minima. Nulla illo est aperiam atque iste voluptatem perspiciatis tempore. Nisi fugit quod aut numquam.",
+    "lecturer": 10,
+    "group": 1,
+    "room": "985",
+    "date": {
+      "start": "2023-12-07T21:00:00.000Z",
+      "end": "2023-12-07T22:30:00.000Z"
+    }
+  },
+  {
+    "id": 44,
+    "name": "LCA",
+    "description": "Similique corporis qui corporis dolore omnis numquam nisi. Ea ut praesentium voluptates expedita neque sapiente similique. Quod vel voluptatum vitae dolores ipsum.",
+    "lecturer": 4,
+    "group": 5,
+    "room": "793",
+    "date": {
+      "start": "2024-08-26T14:15:00.000Z",
+      "end": "2024-08-26T15:45:00.000Z"
+    }
+  },
+  {
+    "id": 45,
+    "name": "HOR",
+    "description": "Autem inventore sapiente reprehenderit voluptates. Iusto aperiam distinctio consequuntur nemo dicta. Similique ipsum fugiat.",
+    "lecturer": 7,
+    "group": 4,
+    "room": "996",
+    "date": {
+      "start": "2024-10-21T20:45:00.000Z",
+      "end": "2024-10-21T22:15:00.000Z"
+    }
+  },
+  {
+    "id": 46,
+    "name": "GQR",
+    "description": "Voluptates eligendi neque quaerat. Earum distinctio doloremque veritatis reprehenderit nisi voluptates eaque voluptate amet. Qui veritatis porro vel labore soluta quae.",
+    "lecturer": 18,
+    "group": 5,
+    "room": "391",
+    "date": {
+      "start": "2024-08-07T23:30:00.000Z",
+      "end": "2024-08-08T01:00:00.000Z"
+    }
+  },
+  {
+    "id": 47,
+    "name": "WZX",
+    "description": "Possimus exercitationem ipsam facilis maiores quod itaque deserunt. Commodi aliquam facilis amet velit culpa. Laudantium sit aliquid quasi ullam.",
+    "lecturer": 7,
+    "group": 4,
+    "room": "603",
+    "date": {
+      "start": "2023-12-07T07:15:00.000Z",
+      "end": "2023-12-07T08:45:00.000Z"
+    }
+  },
+  {
+    "id": 48,
+    "name": "LXG",
+    "description": "Quidem magnam beatae minus delectus. Aliquid pariatur iusto in soluta. Voluptate corporis mollitia vitae vero odit tempore.",
+    "lecturer": 9,
+    "group": 2,
+    "room": "774",
+    "date": {
+      "start": "2023-11-02T06:15:00.000Z",
+      "end": "2023-11-02T07:45:00.000Z"
+    }
+  },
+  {
+    "id": 49,
+    "name": "MGT",
+    "description": "Sequi debitis optio fuga ad excepturi accusantium corrupti cum dolorem. Impedit temporibus necessitatibus voluptates. Harum ducimus quis reprehenderit aut maxime ad quibusdam.",
+    "lecturer": 8,
+    "group": 2,
+    "room": "193",
+    "date": {
+      "start": "2024-02-13T17:30:00.000Z",
+      "end": "2024-02-13T19:00:00.000Z"
+    }
+  },
+  {
+    "id": 50,
+    "name": "DFB",
+    "description": "Iste aliquid perferendis voluptas sed. A ea maxime impedit velit optio minima quaerat iure exercitationem. Ullam perspiciatis fugit maiores.",
+    "lecturer": 20,
+    "group": 1,
+    "room": "925",
+    "date": {
+      "start": "2024-04-24T09:45:00.000Z",
+      "end": "2024-04-24T11:15:00.000Z"
+    }
+  },
+  {
+    "id": 51,
+    "name": "IBN",
+    "description": "Hic deserunt corrupti ut sapiente. Laudantium quia assumenda laboriosam atque provident quisquam odio temporibus dolores. Ipsum mollitia deserunt deleniti.",
+    "lecturer": 5,
+    "group": 1,
+    "room": "460",
+    "date": {
+      "start": "2024-06-29T12:30:00.000Z",
+      "end": "2024-06-29T14:00:00.000Z"
+    }
+  },
+  {
+    "id": 52,
+    "name": "VAD",
+    "description": "Autem natus assumenda quasi. Natus molestiae eaque temporibus sapiente voluptatem maiores illo. Ipsum culpa quidem cumque ab cumque est.",
+    "lecturer": 9,
+    "group": 3,
+    "room": "744",
+    "date": {
+      "start": "2024-08-22T07:30:00.000Z",
+      "end": "2024-08-22T09:00:00.000Z"
+    }
+  },
+  {
+    "id": 53,
+    "name": "ROW",
+    "description": "Accusantium ullam impedit cupiditate nam deleniti. Assumenda odio modi at iusto tempore. Perspiciatis aspernatur officiis eius dolore.",
+    "lecturer": 1,
+    "group": 1,
+    "room": "353",
+    "date": {
+      "start": "2024-08-30T22:00:00.000Z",
+      "end": "2024-08-30T23:30:00.000Z"
+    }
+  },
+  {
+    "id": 54,
+    "name": "FJA",
+    "description": "Asperiores totam adipisci consequatur. Reiciendis velit quod reprehenderit. Ducimus laborum suscipit voluptatem nostrum nisi accusantium ex dolor.",
+    "lecturer": 4,
+    "group": 5,
+    "room": "776",
+    "date": {
+      "start": "2024-03-28T06:00:00.000Z",
+      "end": "2024-03-28T07:30:00.000Z"
+    }
+  },
+  {
+    "id": 55,
+    "name": "SZZ",
+    "description": "Non velit maiores voluptatum nam ut. Nulla quaerat doloremque ipsum beatae fuga cumque. Eaque esse quo laboriosam consequatur.",
+    "lecturer": 3,
+    "group": 4,
+    "room": "085",
+    "date": {
+      "start": "2023-11-29T20:45:00.000Z",
+      "end": "2023-11-29T22:15:00.000Z"
+    }
+  },
+  {
+    "id": 56,
+    "name": "CIV",
+    "description": "Commodi sequi unde ullam qui facere modi non. Esse quasi vero molestias nisi placeat minima facilis et alias. Eaque quasi sit deserunt quidem quos quibusdam illum repudiandae.",
+    "lecturer": 6,
+    "group": 4,
+    "room": "438",
+    "date": {
+      "start": "2024-10-20T02:45:00.000Z",
+      "end": "2024-10-20T04:15:00.000Z"
+    }
+  },
+  {
+    "id": 57,
+    "name": "PFR",
+    "description": "Reiciendis quaerat rerum excepturi maxime corrupti. Maxime odio repudiandae voluptate rem animi vel veniam illo officia. Facere autem minima occaecati non dolorem voluptatem in numquam nihil.",
+    "lecturer": 17,
+    "group": 1,
+    "room": "594",
+    "date": {
+      "start": "2023-11-27T18:15:00.000Z",
+      "end": "2023-11-27T19:45:00.000Z"
+    }
+  },
+  {
+    "id": 58,
+    "name": "VLX",
+    "description": "Delectus illo delectus sint deleniti labore. Quaerat fugiat voluptas exercitationem. Ipsum reiciendis aliquid quisquam necessitatibus suscipit itaque consequuntur pariatur.",
+    "lecturer": 11,
+    "group": 2,
+    "room": "793",
+    "date": {
+      "start": "2024-03-08T03:30:00.000Z",
+      "end": "2024-03-08T05:00:00.000Z"
+    }
+  },
+  {
+    "id": 59,
+    "name": "UEQ",
+    "description": "Maiores veritatis aliquid sint rerum ut hic numquam nesciunt. Voluptatum dolor quibusdam mollitia eaque similique nam. Error ex voluptates in deleniti consectetur.",
+    "lecturer": 3,
+    "group": 1,
+    "room": "117",
+    "date": {
+      "start": "2024-09-28T03:45:00.000Z",
+      "end": "2024-09-28T05:15:00.000Z"
+    }
+  },
+  {
+    "id": 60,
+    "name": "UES",
+    "description": "Similique est cum excepturi nobis. Voluptatum suscipit itaque consequatur facilis dolores. Sunt pariatur quidem qui vero voluptatum quis voluptatibus asperiores ex.",
+    "lecturer": 3,
+    "group": 3,
+    "room": "592",
+    "date": {
+      "start": "2024-02-13T16:45:00.000Z",
+      "end": "2024-02-13T18:15:00.000Z"
+    }
+  },
+  {
+    "id": 61,
+    "name": "WEB",
+    "description": "Atque ducimus dignissimos delectus quos alias adipisci recusandae fuga similique. Aliquam nihil nostrum itaque odit neque odio officiis accusamus eaque. Cupiditate molestiae voluptatum accusamus eum est.",
+    "lecturer": 13,
+    "group": 1,
+    "room": "209",
+    "date": {
+      "start": "2024-08-22T19:30:00.000Z",
+      "end": "2024-08-22T21:00:00.000Z"
+    }
+  },
+  {
+    "id": 62,
+    "name": "OMM",
+    "description": "Voluptate ea expedita similique officiis labore ut atque deleniti. Suscipit adipisci sit a. Deserunt recusandae perferendis.",
+    "lecturer": 12,
+    "group": 5,
+    "room": "170",
+    "date": {
+      "start": "2023-11-08T04:45:00.000Z",
+      "end": "2023-11-08T06:15:00.000Z"
+    }
+  },
+  {
+    "id": 63,
+    "name": "MKA",
+    "description": "Illo rem possimus. Soluta blanditiis porro numquam. Atque cum corrupti saepe amet qui et et.",
+    "lecturer": 10,
+    "group": 3,
+    "room": "786",
+    "date": {
+      "start": "2024-05-16T01:45:00.000Z",
+      "end": "2024-05-16T03:15:00.000Z"
+    }
+  },
+  {
+    "id": 64,
+    "name": "UOO",
+    "description": "Pariatur in minima esse natus quaerat pariatur. Distinctio dolore earum voluptatum repellendus. Rem distinctio a corrupti molestias occaecati.",
+    "lecturer": 3,
+    "group": 1,
+    "room": "909",
+    "date": {
+      "start": "2024-03-13T06:00:00.000Z",
+      "end": "2024-03-13T07:30:00.000Z"
+    }
+  },
+  {
+    "id": 65,
+    "name": "WAR",
+    "description": "Voluptas dolores autem aliquam excepturi. Officia rerum dicta impedit. Laudantium esse consectetur impedit amet voluptatem praesentium deserunt aspernatur pariatur.",
+    "lecturer": 12,
+    "group": 2,
+    "room": "416",
+    "date": {
+      "start": "2024-01-14T16:30:00.000Z",
+      "end": "2024-01-14T18:00:00.000Z"
+    }
+  },
+  {
+    "id": 66,
+    "name": "FDH",
+    "description": "Non dolorum minima sequi saepe. Repudiandae optio tenetur quas qui. Consequatur nihil dolorum veritatis odit assumenda quas.",
+    "lecturer": 6,
+    "group": 2,
+    "room": "006",
+    "date": {
+      "start": "2023-12-22T04:45:00.000Z",
+      "end": "2023-12-22T06:15:00.000Z"
+    }
+  },
+  {
+    "id": 67,
+    "name": "TWY",
+    "description": "Error veniam temporibus ipsa quisquam laboriosam sed dolorem. Itaque repudiandae nam assumenda aperiam laudantium possimus qui provident. Non sed enim voluptatum ratione occaecati.",
+    "lecturer": 8,
+    "group": 5,
+    "room": "270",
+    "date": {
+      "start": "2024-05-13T02:45:00.000Z",
+      "end": "2024-05-13T04:15:00.000Z"
+    }
+  },
+  {
+    "id": 68,
+    "name": "KBU",
+    "description": "Fugit vitae deleniti iste quae dolore ipsam. Ad quasi quaerat rerum atque itaque dolorum quibusdam earum. Suscipit voluptatibus incidunt deleniti optio praesentium id a labore.",
+    "lecturer": 16,
+    "group": 5,
+    "room": "561",
+    "date": {
+      "start": "2024-01-29T13:15:00.000Z",
+      "end": "2024-01-29T14:45:00.000Z"
+    }
+  },
+  {
+    "id": 69,
+    "name": "KVP",
+    "description": "Consequuntur quisquam nulla molestias fugit. Ut beatae id ipsa non. Similique rerum quasi tempore perferendis quisquam inventore illo.",
+    "lecturer": 4,
+    "group": 2,
+    "room": "976",
+    "date": {
+      "start": "2024-02-12T00:15:00.000Z",
+      "end": "2024-02-12T01:45:00.000Z"
+    }
+  },
+  {
+    "id": 70,
+    "name": "RWC",
+    "description": "Sunt saepe dolores enim nulla fugit voluptatem. Nostrum eum laboriosam dignissimos explicabo voluptate dolor nemo corporis. Aspernatur provident voluptatum quaerat quia.",
+    "lecturer": 1,
+    "group": 2,
+    "room": "761",
+    "date": {
+      "start": "2024-09-29T09:45:00.000Z",
+      "end": "2024-09-29T11:15:00.000Z"
+    }
+  },
+  {
+    "id": 71,
+    "name": "TKC",
+    "description": "Expedita nesciunt magni voluptates optio quisquam sequi nam dolore. Ipsam quibusdam dolore consectetur voluptates ad laudantium distinctio eaque architecto. Unde earum aspernatur quisquam.",
+    "lecturer": 18,
+    "group": 1,
+    "room": "239",
+    "date": {
+      "start": "2024-01-02T14:45:00.000Z",
+      "end": "2024-01-02T16:15:00.000Z"
+    }
+  },
+  {
+    "id": 72,
+    "name": "ZRK",
+    "description": "Ab ipsam deserunt commodi perferendis cupiditate officia. Hic dolores at ab asperiores blanditiis nobis eum. Tenetur laboriosam commodi labore non sit ex nihil.",
+    "lecturer": 13,
+    "group": 2,
+    "room": "577",
+    "date": {
+      "start": "2023-12-04T20:15:00.000Z",
+      "end": "2023-12-04T21:45:00.000Z"
+    }
+  },
+  {
+    "id": 73,
+    "name": "HOP",
+    "description": "Dolores iste totam dignissimos quaerat ipsum veritatis. Pariatur sint iusto impedit. Quaerat sapiente ex provident perspiciatis dignissimos adipisci at saepe.",
+    "lecturer": 7,
+    "group": 1,
+    "room": "751",
+    "date": {
+      "start": "2024-06-17T11:00:00.000Z",
+      "end": "2024-06-17T12:30:00.000Z"
+    }
+  },
+  {
+    "id": 74,
+    "name": "KUY",
+    "description": "Beatae minima quos non harum placeat illum expedita dignissimos. Beatae expedita ut vitae a at libero molestiae. Inventore modi sed nisi.",
+    "lecturer": 7,
+    "group": 1,
+    "room": "087",
+    "date": {
+      "start": "2024-01-08T16:30:00.000Z",
+      "end": "2024-01-08T18:00:00.000Z"
+    }
+  },
+  {
+    "id": 75,
+    "name": "SBT",
+    "description": "Minima itaque ullam dolorum deleniti corrupti odio ratione eveniet natus. Voluptas eaque itaque rem. Iste laborum totam itaque cum est iste consectetur.",
+    "lecturer": 11,
+    "group": 2,
+    "room": "323",
+    "date": {
+      "start": "2024-05-21T13:00:00.000Z",
+      "end": "2024-05-21T14:30:00.000Z"
+    }
+  },
+  {
+    "id": 76,
+    "name": "NVA",
+    "description": "Expedita sequi corporis vitae fugiat. Excepturi pariatur cum fugiat esse inventore inventore optio quia nulla. Magni eaque animi.",
+    "lecturer": 6,
+    "group": 2,
+    "room": "086",
+    "date": {
+      "start": "2024-02-17T08:00:00.000Z",
+      "end": "2024-02-17T09:30:00.000Z"
+    }
+  },
+  {
+    "id": 77,
+    "name": "AQJ",
+    "description": "Doloremque odit placeat veritatis nostrum quisquam officiis minima eligendi. Quidem adipisci dignissimos corrupti at aliquid vel. Sequi temporibus eligendi provident recusandae dolore nam ut.",
+    "lecturer": 20,
+    "group": 4,
+    "room": "047",
+    "date": {
+      "start": "2024-09-26T08:30:00.000Z",
+      "end": "2024-09-26T10:00:00.000Z"
+    }
+  },
+  {
+    "id": 78,
+    "name": "XRO",
+    "description": "Perspiciatis quod minima delectus optio reprehenderit asperiores repellendus excepturi. Nobis eaque excepturi odio. Mollitia a repudiandae quod cum dolorum.",
+    "lecturer": 5,
+    "group": 3,
+    "room": "586",
+    "date": {
+      "start": "2023-11-13T11:15:00.000Z",
+      "end": "2023-11-13T12:45:00.000Z"
+    }
+  },
+  {
+    "id": 79,
+    "name": "KMM",
+    "description": "Facere sed iure possimus vero ad qui. Omnis facere quae aut sit amet inventore expedita repellat. Modi minus saepe ducimus esse molestias repellat laudantium sit.",
+    "lecturer": 6,
+    "group": 5,
+    "room": "123",
+    "date": {
+      "start": "2024-04-26T15:00:00.000Z",
+      "end": "2024-04-26T16:30:00.000Z"
+    }
+  },
+  {
+    "id": 80,
+    "name": "RSN",
+    "description": "Quia laborum quod eveniet accusamus. Cum dolorem a enim officia modi repellendus dicta. Repellat optio inventore exercitationem ut.",
+    "lecturer": 16,
+    "group": 3,
+    "room": "682",
+    "date": {
+      "start": "2024-05-04T09:00:00.000Z",
+      "end": "2024-05-04T10:30:00.000Z"
+    }
+  },
+  {
+    "id": 81,
+    "name": "MIV",
+    "description": "Est voluptates necessitatibus temporibus sunt ipsa sit non iusto praesentium. Et saepe porro. Aliquid omnis reprehenderit ipsa.",
+    "lecturer": 16,
+    "group": 2,
+    "room": "592",
+    "date": {
+      "start": "2024-03-04T14:30:00.000Z",
+      "end": "2024-03-04T16:00:00.000Z"
+    }
+  },
+  {
+    "id": 82,
+    "name": "CQK",
+    "description": "Porro quo quo iusto animi sapiente sapiente. Eaque repellendus ducimus neque cum aspernatur culpa iste molestias provident. Deserunt saepe doloribus ea veniam exercitationem placeat.",
+    "lecturer": 14,
+    "group": 4,
+    "room": "350",
+    "date": {
+      "start": "2024-02-04T08:00:00.000Z",
+      "end": "2024-02-04T09:30:00.000Z"
+    }
+  },
+  {
+    "id": 83,
+    "name": "ORV",
+    "description": "Eveniet quo tempora assumenda inventore ullam laboriosam laboriosam. Soluta unde ut alias. Perferendis sint molestiae aperiam quod.",
+    "lecturer": 8,
+    "group": 2,
+    "room": "835",
+    "date": {
+      "start": "2024-01-28T16:45:00.000Z",
+      "end": "2024-01-28T18:15:00.000Z"
+    }
+  },
+  {
+    "id": 84,
+    "name": "OJM",
+    "description": "Enim similique ipsam asperiores. Explicabo incidunt dolores beatae eius itaque autem facilis. Eos labore itaque ducimus.",
+    "lecturer": 15,
+    "group": 5,
+    "room": "027",
+    "date": {
+      "start": "2023-11-12T16:30:00.000Z",
+      "end": "2023-11-12T18:00:00.000Z"
+    }
+  },
+  {
+    "id": 85,
+    "name": "XNN",
+    "description": "Aperiam mollitia soluta tempora culpa. Quidem ipsam corporis ipsam assumenda tempore sapiente. Qui recusandae non amet cum ex qui accusamus.",
+    "lecturer": 6,
+    "group": 2,
+    "room": "126",
+    "date": {
+      "start": "2024-06-09T07:30:00.000Z",
+      "end": "2024-06-09T09:00:00.000Z"
+    }
+  },
+  {
+    "id": 86,
+    "name": "ZFX",
+    "description": "Vitae eligendi libero amet. Id autem provident soluta autem asperiores fugiat optio odio. Non repudiandae quibusdam aliquid.",
+    "lecturer": 16,
+    "group": 3,
+    "room": "768",
+    "date": {
+      "start": "2024-01-08T20:00:00.000Z",
+      "end": "2024-01-08T21:30:00.000Z"
+    }
+  },
+  {
+    "id": 87,
+    "name": "XYH",
+    "description": "Cupiditate quasi molestias adipisci error at itaque corrupti aperiam distinctio. Recusandae reprehenderit natus incidunt est nesciunt veniam laudantium. Fugit corporis adipisci ex.",
+    "lecturer": 5,
+    "group": 4,
+    "room": "527",
+    "date": {
+      "start": "2024-06-22T10:00:00.000Z",
+      "end": "2024-06-22T11:30:00.000Z"
+    }
+  },
+  {
+    "id": 88,
+    "name": "PNX",
+    "description": "Mollitia necessitatibus nam rerum consectetur distinctio explicabo. Illum dolor reiciendis dolores magni esse natus itaque. Consequatur magnam et est.",
+    "lecturer": 18,
+    "group": 2,
+    "room": "418",
+    "date": {
+      "start": "2024-06-19T05:45:00.000Z",
+      "end": "2024-06-19T07:15:00.000Z"
+    }
+  },
+  {
+    "id": 89,
+    "name": "KGR",
+    "description": "Labore quasi culpa molestias non. Veniam sed recusandae. Tempora architecto saepe commodi labore voluptates.",
+    "lecturer": 8,
+    "group": 2,
+    "room": "814",
+    "date": {
+      "start": "2024-04-26T06:30:00.000Z",
+      "end": "2024-04-26T08:00:00.000Z"
+    }
+  },
+  {
+    "id": 90,
+    "name": "VEE",
+    "description": "Quaerat saepe ea qui deserunt modi quisquam veniam nisi deserunt. Non animi culpa sunt occaecati sint. Nisi nemo dolores numquam autem sequi hic.",
+    "lecturer": 12,
+    "group": 2,
+    "room": "835",
+    "date": {
+      "start": "2023-12-21T18:00:00.000Z",
+      "end": "2023-12-21T19:30:00.000Z"
+    }
+  },
+  {
+    "id": 91,
+    "name": "ZIM",
+    "description": "Excepturi et itaque veniam esse. Atque mollitia ad blanditiis nobis tenetur labore similique. Asperiores sequi illo esse nostrum architecto.",
+    "lecturer": 7,
+    "group": 2,
+    "room": "749",
+    "date": {
+      "start": "2024-01-08T06:00:00.000Z",
+      "end": "2024-01-08T07:30:00.000Z"
+    }
+  },
+  {
+    "id": 92,
+    "name": "XUG",
+    "description": "Assumenda iusto consequatur alias et fugiat. Ullam itaque odio perferendis reprehenderit. Earum labore distinctio in temporibus sint dolore libero temporibus.",
+    "lecturer": 15,
+    "group": 3,
+    "room": "225",
+    "date": {
+      "start": "2024-09-14T05:30:00.000Z",
+      "end": "2024-09-14T07:00:00.000Z"
+    }
+  },
+  {
+    "id": 93,
+    "name": "PRW",
+    "description": "Dolor delectus beatae deleniti aspernatur. Totam repellat vitae nobis iure atque animi soluta. Consectetur ea commodi officiis.",
+    "lecturer": 17,
+    "group": 5,
+    "room": "454",
+    "date": {
+      "start": "2024-06-04T04:45:00.000Z",
+      "end": "2024-06-04T06:15:00.000Z"
+    }
+  },
+  {
+    "id": 94,
+    "name": "UPP",
+    "description": "Atque vel laboriosam voluptate dolor nisi dicta laudantium. Vitae cumque voluptatibus quam ducimus. A accusamus aliquam optio impedit aliquid quaerat ex aliquam.",
+    "lecturer": 5,
+    "group": 4,
+    "room": "134",
+    "date": {
+      "start": "2024-07-15T11:00:00.000Z",
+      "end": "2024-07-15T12:30:00.000Z"
+    }
+  },
+  {
+    "id": 95,
+    "name": "GEQ",
+    "description": "Amet distinctio aliquam deleniti quisquam at deserunt nam esse iusto. Eligendi corrupti voluptatibus esse praesentium non sapiente id. Exercitationem totam totam nostrum natus reiciendis.",
+    "lecturer": 18,
+    "group": 2,
+    "room": "748",
+    "date": {
+      "start": "2024-01-18T09:30:00.000Z",
+      "end": "2024-01-18T11:00:00.000Z"
+    }
+  },
+  {
+    "id": 96,
+    "name": "MXX",
+    "description": "Sit saepe rerum facilis cupiditate dicta molestiae et quam. Non excepturi distinctio doloremque incidunt minima itaque. Voluptates praesentium est aliquam ad.",
+    "lecturer": 7,
+    "group": 3,
+    "room": "120",
+    "date": {
+      "start": "2024-01-13T05:45:00.000Z",
+      "end": "2024-01-13T07:15:00.000Z"
+    }
+  },
+  {
+    "id": 97,
+    "name": "VZR",
+    "description": "Sunt ut quam impedit adipisci magnam. Voluptatibus totam itaque. Neque veritatis nostrum.",
+    "lecturer": 15,
+    "group": 2,
+    "room": "125",
+    "date": {
+      "start": "2024-08-27T08:45:00.000Z",
+      "end": "2024-08-27T10:15:00.000Z"
+    }
+  },
+  {
+    "id": 98,
+    "name": "IOA",
+    "description": "Odit porro impedit ducimus ex. Veritatis laboriosam nostrum. Distinctio quis non veritatis pariatur nemo.",
+    "lecturer": 20,
+    "group": 3,
+    "room": "595",
+    "date": {
+      "start": "2024-07-20T03:45:00.000Z",
+      "end": "2024-07-20T05:15:00.000Z"
+    }
+  },
+  {
+    "id": 99,
+    "name": "SMV",
+    "description": "Tempore voluptatem rerum placeat sequi molestias voluptatibus magnam occaecati. Laudantium asperiores illum. Suscipit impedit tempora.",
+    "lecturer": 15,
+    "group": 4,
+    "room": "344",
+    "date": {
+      "start": "2024-06-28T06:15:00.000Z",
+      "end": "2024-06-28T07:45:00.000Z"
+    }
+  }
+]

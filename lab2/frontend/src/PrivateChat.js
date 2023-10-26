@@ -1,9 +1,10 @@
-import { usePrivateChat} from "./PrivateChatContext";
-import {useEffect, useState} from "react";
+import {usePrivateChat} from "./PrivateChatContext";
+import {useState} from "react";
 import {useUser} from "./UserContext";
-export default function PrivateChat({ chat }) {
-    const { user } = useUser();
-    const { sendMessage } = usePrivateChat();
+
+export default function PrivateChat({chat}) {
+    const {user} = useUser();
+    const {sendMessage} = usePrivateChat();
     const [message, setMessage] = useState('');
 
     const handleSubmit = (event) => {

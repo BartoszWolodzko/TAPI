@@ -1,0 +1,21 @@
+{
+  "name": "apigraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "graphql": "^16.8.1",
+    "nodemon": "^3.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "@faker-js/faker": "^8.2.0"
+  }
+}

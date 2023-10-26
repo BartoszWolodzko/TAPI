@@ -1,5 +1,7 @@
 {
-  "modulePathIgnorePatterns": ["/dist/"],
+  "modulePathIgnorePatterns": [
+    "/dist/"
+  ],
   "transform": {
     "^.+\\.js$": "babel-jest"
   }

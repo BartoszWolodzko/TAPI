@@ -1,4 +1,5 @@
 import {schedule} from "../../../../mocks/plan";
+
 /**
  * @param {Request} _req
  * @param {Response} res
@@ -26,7 +27,7 @@ const getPlan = (_req, res) => {
     if (id === undefined) {
         return res.status(400).json({message: 'Bad request'});
     }
-    
+
     data = data.filter(item => item.group.students.find(student => student.id === Number(id)));
 
     return res.status(200).json(data);

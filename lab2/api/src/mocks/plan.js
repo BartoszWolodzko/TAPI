@@ -42,7 +42,7 @@ for (let i = 0; i < 10; i++) {
     rooms.push({
         id: faker.string.uuid(),
         name: faker.string.alphanumeric({casing: 'upper', length: 4}),
-        capacity: faker.number.int({ min: 15, max: 100 })
+        capacity: faker.number.int({min: 15, max: 100})
     });
 }
 

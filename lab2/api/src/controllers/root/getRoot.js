@@ -2,8 +2,8 @@ import config from '../../config.js';
 
 /**
  * Health check endpoint
- * @param {import('express').Request} _req 
- * @param {import('express').Response} res 
+ * @param {import('express').Request} _req
+ * @param {import('express').Response} res
  */
 const getRoot = (_req, res) => {
     res.setHeader('Cache-Control', 'private, max-age=50, must-revalidate');

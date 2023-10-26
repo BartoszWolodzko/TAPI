@@ -1,6 +1,6 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { io } from 'socket.io-client';
-import { useUser } from "./UserContext";
+import {createContext, useContext, useEffect, useState} from 'react';
+import {io} from 'socket.io-client';
+import {useUser} from "./UserContext";
 
 const SocketContext = createContext();
 
@@ -8,9 +8,13 @@ export const useSocket = () => {
     return useContext(SocketContext);
 }
 
-export const SocketProvider = ({ children }) => {
+export const SocketProvider = ({children}) => {
     const [socket, setSocket] = useState();
-    const { user } = useUser();
+    const {user} = useUser();
+
+    const setStatus = (status) =>{
+        socket.emit('status-change', status);
+    }
 
     useEffect(() => {
         if (!user) return;
@@ -18,7 +22,7 @@ export const SocketProvider = ({ children }) => {
         let socketId = localStorage.getItem('socketId');
         let newSocket
         if (socketId != null) {
-             newSocket = io('http://localhost:8001', {
+            newSocket = io('http://localhost:8001', {
                 auth: {
                     userId: user.id,
                     sessionId: socketId
@@ -43,7 +47,7 @@ export const SocketProvider = ({ children }) => {
             console.log('connected');
         });
 
-        socket.on('session', ({ sessionId }) => {
+        socket.on('session', ({sessionId}) => {
             localStorage.setItem('socketId', sessionId);
         });
 
@@ -62,7 +66,7 @@ export const SocketProvider = ({ children }) => {
     }, [socket]);
 
     return (
-        <SocketContext.Provider value={socket}>
+        <SocketContext.Provider value={{socket, setStatus}}>
             {children}
         </SocketContext.Provider>
     )

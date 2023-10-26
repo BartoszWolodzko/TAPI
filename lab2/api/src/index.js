@@ -1,13 +1,13 @@
 import app from './app'
 import config from './config'
+import {Server} from "socket.io";
+import {createServer} from "http";
 
-app.listen(config.apiPort, ()=>{
+app.listen(config.apiPort, () => {
     console.log(`🚀 ${config.name} ${config.version} 🚀`)
     console.log(`🚀 Listening on ${config.apiPort} with NODE_ENV=${config.nodeEnv} 🚀`)
 })
 
-import { Server } from "socket.io";
-import { createServer } from "http";
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
     cors: {
@@ -19,6 +19,7 @@ const io = new Server(httpServer, {
 let sessionStore = [];
 let messagesStore = [];
 let chatsStore = [];
+let possibleStatuses = ['online', 'offline', 'away', "busy"];
 
 const randomId = () => {
     // this shouldnt exist in sessionStore
@@ -35,6 +36,7 @@ io.use((socket, next) => {
 
     sessionStore.push({
         userId: userId,
+        socketId: socket.id,
     });
 
     next();
@@ -48,10 +50,14 @@ io.on("connection", (socket) => {
     // i urzadzenia dostaja socket.to(userId)
     socket.join(socket.userId);
 
-    // czy to potrzebne?
-    // czy to bezpieczne!?
-    socket.emit("session", {
-        userId: socket.handshake.auth.userId
+    // logike wywalil bym na fronta
+    // i tam mozna zapisytac ostatni stan w cookies
+    socket.on('status-change', (status) => {
+        const session = sessionStore.find(session => session.userId === socket.userId);
+        if (!session) return;
+        if (!possibleStatuses.includes(status)) return;
+        session.status = status;
+        io.emit('users', sessionStore);
     });
 
     //debug
@@ -72,7 +78,7 @@ io.on("connection", (socket) => {
     });
 
     //ktos gdzies wyslal wiadomosc
-    socket.on("private-message", ({ content, chatId }) => {
+    socket.on("private-message", ({content, chatId}) => {
         //wyciagnij id uczestnikow
         let usersId = chatId.split('@');
 
@@ -80,14 +86,14 @@ io.on("connection", (socket) => {
         //later we can add list of chats
         // in witch user is participating
         if (!chatsStore.find(chat => chat.chatId === chatId)) {
-            chatsStore.push({ chatId, usersId: usersId });
+            chatsStore.push({chatId, usersId: usersId});
         }
 
         //censures message goes here
         // content = tomek(content);
 
         //create message
-        const message = { content, from: socket.userId, chatId };
+        const message = {content, from: socket.userId, chatId};
 
         //store message
         messagesStore.push(message);
@@ -103,7 +109,7 @@ io.on("connection", (socket) => {
             (session) => session.userId !== socket.userId
         );
 
-        if(sessionStore.find(session => session.userId === socket.userId)){
+        if (sessionStore.find(session => session.userId === socket.userId)) {
             console.log('user disconnected but still connected with another');
         } else {
             console.log('user disconnected');

@@ -1,0 +1,16 @@
+{
+  "name": "data-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node generate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "date-fns": "^2.30.0"
+  }
+}

@@ -1,13 +1,14 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { useUser } from "./UserContext";
+import {createContext, useContext, useEffect, useState} from 'react';
+import {useUser} from "./UserContext";
 import {useSocket} from "./SocketContext";
+
 const PrivateChatContext = createContext();
 export const usePrivateChat = () => {
     return useContext(PrivateChatContext);
 }
-export const PrivateChatProvider = ({ children }) => {
-    const { user } = useUser();
-    const socket = useSocket();
+export const PrivateChatProvider = ({children}) => {
+    const {user} = useUser();
+    const {socket} = useSocket();
     const [openedChats, setOpenedChats] = useState([]);
 
     const openChat = (chatId) => {
@@ -15,9 +16,9 @@ export const PrivateChatProvider = ({ children }) => {
             .find(chat => {
                 return chat.chatId === chatId
             })) {
-                socket.emit('get-messages', chatId);
+            socket.emit('get-messages', chatId);
         }
-        setOpenedChats([...openedChats, { chatId, messages: [] }]);
+        setOpenedChats([...openedChats, {chatId, messages: []}]);
     }
 
     const closeChat = (chatId) => {
@@ -25,15 +26,15 @@ export const PrivateChatProvider = ({ children }) => {
     }
 
     const sendMessage = (content, chatId) => {
-        socket.emit('private-message', { content, chatId });
+        socket.emit('private-message', {content, chatId});
         // add message to opened chats
         const chat = openedChats.find(chat => chat.chatId === chatId);
-            chat.messages.push({
-                content,
-                from: user.id,
-                chatId,
-            });
-            setOpenedChats([...openedChats]);
+        chat.messages.push({
+            content,
+            from: user.id,
+            chatId,
+        });
+        setOpenedChats([...openedChats]);
     }
 
     useEffect(() => {
@@ -62,10 +63,8 @@ export const PrivateChatProvider = ({ children }) => {
     }, [socket, openedChats]);
 
 
-
-
     return (
-        <PrivateChatContext.Provider value={{ openedChats, setOpenedChats, openChat, closeChat, sendMessage }}>
+        <PrivateChatContext.Provider value={{openedChats, setOpenedChats, openChat, closeChat, sendMessage}}>
             {children}
         </PrivateChatContext.Provider>
     );
