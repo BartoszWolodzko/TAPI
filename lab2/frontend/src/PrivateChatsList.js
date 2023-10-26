@@ -4,6 +4,7 @@ import PrivateChat from "./PrivateChat";
 export default function PrivateChatsList() {
     const { openedChats } = usePrivateChat();
 
+    console.log(openedChats);
     return (
         <div className="private-chats-list">
             <h2>Private chats</h2>

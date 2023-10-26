@@ -68,10 +68,12 @@ io.on("connection", (socket) => {
     });
 
     //on open chat window get messages
+    // this should be done in rest api
     socket.on('get-messages', (chatId) => {
         const messages = messagesStore.filter(message =>
             message.chatId === chatId
         );
+        console.log(messages);
         socket.emit('messages', messages);
     });
 
@@ -81,8 +83,6 @@ io.on("connection", (socket) => {
         //if chat doesn't exist, create it
         if (!chatsStore.find(chat => chat.chatId === chatId)) {
             chatsStore.push({ chatId, usersId: usersId });
-            //send to all users in chat to open window
-            //socket.to(usersId).emit('create-chat', { chatId: chatId, usersId: chatId.usersId });
         }
 
         const message = { content, from: socket.userId, chatId };
@@ -92,7 +92,7 @@ io.on("connection", (socket) => {
         messagesStore.push(message);
 
         //send to all users in chat
-        socket.to(usersId).emit("private-message", message);
+        socket.to(usersId).to(socket.userId).emit("private-message", message);
     });
 
 
