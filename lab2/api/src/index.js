@@ -16,6 +16,8 @@ const io = new Server(httpServer, {
 });
 
 let sessionStore = [];
+let messagesStore = [];
+let chatsStore = [];
 
 const randomId = () => {
     return "_" + Math.random().toString(36).substr(2, 9); // canot exist in sessionStore
@@ -55,6 +57,9 @@ io.on("connection", (socket) => {
     console.log("a user connected");
     socket.join(socket.userId);
 
+    socket.onAny((event, ...args) => {
+        console.log(event, args);
+    });
     io.emit('users', sessionStore); // to everyone
 
     socket.emit("session", {
@@ -62,20 +67,32 @@ io.on("connection", (socket) => {
         userId: socket.handshake.auth.userId
     });
 
-    socket.on('join-room', (room) => {
-        socket.join(room);
+    //on open chat window get messages
+    socket.on('get-messages', (chatId) => {
+        const messages = messagesStore.filter(message =>
+            message.chatId === chatId
+        );
+        socket.emit('messages', messages);
     });
 
-    socket.on('leave-room', (room) => {
-        socket.leave(room);
-    });
+    socket.on("private-message", ({ content, chatId }) => {
+        let usersId = chatId.split('@');
 
-    socket.on("private-message", ({ content, to }) => {
-        socket.to(to).emit(`private-message-${to}`, {
-            content,
-            from: socket.userId,
-            to,
-        });
+        //if chat doesn't exist, create it
+        if (!chatsStore.find(chat => chat.chatId === chatId)) {
+            chatsStore.push({ chatId, usersId: usersId });
+            //send to all users in chat to open window
+            //socket.to(usersId).emit('create-chat', { chatId: chatId, usersId: chatId.usersId });
+        }
+
+        const message = { content, from: socket.userId, chatId };
+        //censures message goes here
+
+        //store message
+        messagesStore.push(message);
+
+        //send to all users in chat
+        socket.to(usersId).emit("private-message", message);
     });
 
 

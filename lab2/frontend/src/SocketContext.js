@@ -37,7 +37,7 @@ export const SocketProvider = ({ children }) => {
     }, [user]);
 
     useEffect(() => {
-        console.log(socket);
+
         if (!socket) return;
         socket.on('connect', () => {
             console.log('connected');

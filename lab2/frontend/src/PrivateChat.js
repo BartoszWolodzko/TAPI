@@ -1,83 +1,38 @@
-import {useUser} from "./UserContext";
-import {useSocket} from "./SocketContext";
+import { usePrivateChat} from "./PrivateChatContext";
 import {useEffect, useState} from "react";
-
-export default function PrivateChat({ userId }) {
+import {useUser} from "./UserContext";
+export default function PrivateChat({ chat }) {
     const { user } = useUser();
-    const socket = useSocket();
-    const [messages, setMessages] = useState([]);
+    const { sendMessage } = usePrivateChat();
     const [message, setMessage] = useState('');
-    const [room, setRoom] = useState('');
 
-    useEffect(() => {
-        if (!socket) return;
-        socket.on(`private-message-${userId}`, (message) => {
-            setMessages((prev) => [...prev, message]);
-        });
-    }, [socket, userId]);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        sendMessage(message, chat.chatId);
+        setMessage('');
+    }
 
-    const sendMessage = () => {
-        if (message) {
-            socket.emit('private-message', {
-                content: message,
-                to: userId,
-                from: user.id,
-            });
-            setMessages((prev) => [
-                ...prev,
-                {
-                    content: message,
-                    to: userId,
-                    from: user.id,
-                },
-            ]);
-            setMessage('');
-        }
-    };
+    console.log(chat);
 
     return (
-        <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100%'
-        }}>
-            <h3>Private chat with {userId}</h3>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%'
-            }}>
-                <ul style={{
-                    listStyle: 'none',
-                    padding: 0,
-                    width: '100%',
-                    height: '100%',
-                    overflow: 'auto'
-                }}>
-                    {messages.map((message, i) => (
-                        <li
-                            key={i}
-                            style={{
-                                textAlign: message.from === user.id ? 'right' : 'left',
-                                padding: '0.5rem',
-                                borderBottom: '1px solid #ccc'
-                            }}>{message.content}</li>
-                    ))}
-                </ul>
-            </div>
-            <div>
+        <div className="private-chat">
+            <h3>Chat id: {chat.chatId}</h3>
+            <ul>
+                {chat.messages.map(message => (
+                    <li>
+                        {message.from === user.id ? 'You' : message.from}:
+                        {message.content}
+                    </li>
+                ))}
+            </ul>
+            <form onSubmit={handleSubmit}>
                 <input
                     type="text"
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Say something..."
+                    onChange={event => setMessage(event.target.value)}
                 />
-                <button onClick={sendMessage}>Send</button>
-            </div>
+                <button type="submit">Send</button>
+            </form>
         </div>
     );
 }

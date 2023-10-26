@@ -3,17 +3,17 @@ import { useUser } from "./UserContext";
 import { useSocket } from "./SocketContext";
 import { usePrivateChat } from "./PrivateChatContext";
 export default function Users(){
-    const { user } = useUser();
     const socket = useSocket();
-    const [users, setUsers] = useState([]);
-    const { openedChats, setOpenedChats } = usePrivateChat();
+    const [connectedUsers, setConnectedUsers] = useState([]);
+    const { openChat } = usePrivateChat();
+    const { user } = useUser();
 
     useEffect(() => {
         if (!socket) return;
         socket.on('users', (users) => {
-            setUsers(users);
+            setConnectedUsers(users);
         });
-    } , [socket, users]);
+    } , [socket, connectedUsers]);
 
     return (
         <div style={{
@@ -21,9 +21,10 @@ export default function Users(){
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '100%'
+            height: '100%',
+            gridArea: 'users',
         }}>
-            Users connected to socket
+            Users connected to socket<br/>
             <ul style={{
                 listStyle: 'none',
                 padding: 0,
@@ -31,24 +32,18 @@ export default function Users(){
                 height: '100%',
                 overflow: 'auto'
             }}>
-                {users.map((user, i) => (
+                {connectedUsers.map((connectedUser, i) => (
                     <li
                         key={i}
                         onClick={() => {
-                            if (user.userId === user.id) return;
-                            if (openedChats.find((chat) => chat.userId === user.userId)) return;
-                            setOpenedChats((prev) => [
-                                ...prev,
-                                {
-                                    userId: user.userId,
-                                }
-                            ]);
+                            const chatId = [user.id, connectedUser.userId].sort().join('@');
+                            openChat(chatId);
                         }}
                         style={{
-                        textAlign: user.userId === user.id ? 'right' : 'left',
+                        textAlign: connectedUser.userId === user.id ? 'right' : 'left',
                         padding: '0.5rem',
                         borderBottom: '1px solid #ccc'
-                    }}>{user.userId}</li>
+                    }}>{connectedUser.userId}</li>
                 ))}
             </ul>
         </div>
