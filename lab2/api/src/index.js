@@ -15,12 +15,14 @@ const io = new Server(httpServer, {
     }
 });
 
+// wywalic to do bazy danych
 let sessionStore = [];
 let messagesStore = [];
 let chatsStore = [];
 
 const randomId = () => {
-    return "_" + Math.random().toString(36).substr(2, 9); // canot exist in sessionStore
+    // this shouldnt exist in sessionStore
+    return "_" + Math.random().toString(36).substr(2, 9);
 }
 
 io.use((socket, next) => {
@@ -29,25 +31,11 @@ io.use((socket, next) => {
         return next(new Error("invalid user"));
     }
 
-    const sessionId = socket.handshake.auth.sessionId;
-    if (sessionId) {
-        // find existing session
-        const session = sessionStore.find(session =>
-            session.sessionId === sessionId && session.userId === userId);
-        if (session) {
-            socket.sessionId = sessionId;
-            return next();
-        }
-    }
-
-    socket.sessionId = randomId();
     socket.userId = userId;
 
     sessionStore.push({
-        sessionId: socket.sessionId,
         userId: userId,
     });
-
 
     next();
 });
@@ -55,17 +43,24 @@ io.use((socket, next) => {
 
 io.on("connection", (socket) => {
     console.log("a user connected");
+
+    // dzieki temu wszystkie zakladki
+    // i urzadzenia dostaja socket.to(userId)
     socket.join(socket.userId);
 
+    // czy to potrzebne?
+    // czy to bezpieczne!?
+    socket.emit("session", {
+        userId: socket.handshake.auth.userId
+    });
+
+    //debug
     socket.onAny((event, ...args) => {
         console.log(event, args);
     });
-    io.emit('users', sessionStore); // to everyone
 
-    socket.emit("session", {
-        sessionId: socket.sessionId,
-        userId: socket.handshake.auth.userId
-    });
+    //send users to everyone
+    io.emit('users', sessionStore);
 
     //on open chat window get messages
     // this should be done in rest api
@@ -73,20 +68,26 @@ io.on("connection", (socket) => {
         const messages = messagesStore.filter(message =>
             message.chatId === chatId
         );
-        console.log(messages);
         socket.emit('messages', messages);
     });
 
+    //ktos gdzies wyslal wiadomosc
     socket.on("private-message", ({ content, chatId }) => {
+        //wyciagnij id uczestnikow
         let usersId = chatId.split('@');
 
         //if chat doesn't exist, create it
+        //later we can add list of chats
+        // in witch user is participating
         if (!chatsStore.find(chat => chat.chatId === chatId)) {
             chatsStore.push({ chatId, usersId: usersId });
         }
 
-        const message = { content, from: socket.userId, chatId };
         //censures message goes here
+        // content = tomek(content);
+
+        //create message
+        const message = { content, from: socket.userId, chatId };
 
         //store message
         messagesStore.push(message);
@@ -97,12 +98,19 @@ io.on("connection", (socket) => {
 
 
     socket.on("disconnect", () => {
+        //remove user from sessionStore
         sessionStore = sessionStore.filter(
             (session) => session.userId !== socket.userId
         );
-        console.log("user disconnected");
 
-        socket.broadcast.emit('users', sessionStore);
+        if(sessionStore.find(session => session.userId === socket.userId)){
+            console.log('user disconnected but still connected with another');
+        } else {
+            console.log('user disconnected');
+
+            //remove user from users list
+            io.emit('users', sessionStore);
+        }
     });
 });
 
