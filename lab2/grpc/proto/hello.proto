@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+service HelloService {
+    rpc HelloMessage(MessageRequest) returns (MessageResponse) {};
+    rpc Time(Empty) returns (stream TimeMessage) {};
+    rpc Ping(stream PingMessage) returns (stream PongMessage) {};
+}
+
+message Empty {};
+
+message TimeMessage{
+  string time = 1;
+};
+message MessageRequest {
+    string message = 1;
+}
+
+message MessageResponse {
+  string message = 1;
+}
+
+message PingMessage {
+  string message = 1;
+};
+
+message PongMessage {
+  string message = 1;
+};
