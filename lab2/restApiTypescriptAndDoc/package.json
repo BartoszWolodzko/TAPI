@@ -1,0 +1,40 @@
+{
+  "name": "rest-api-written-in-typescript-with-swagger",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+    "main": "dist/app.js",
+    "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev src/app.ts",
+    "docs": "ts-node-dev src/swagger.ts",
+    "openApiClientGen": "openapi-generator-cli generate -i swagger_output.json -g typescript-axios -o ./api-client"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.7.2",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2",
+    "nodemon": "^3.0.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/swagger-ui-express": "^4.1.6"
+  }
+}

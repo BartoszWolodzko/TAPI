@@ -45,6 +45,20 @@ server.addService(groupsProto.GroupService.service, {
     }
 })
 
+const lecturersProto = grpc
+    .loadPackageDefinition(protoLoader
+        .loadSync('./proto/lecturers.proto'));
+
+server.addService(lecturersProto.LecturerService.service, {
+    GetGroup: (request, response) => {
+        const group = groups.find((group) => group.id === request.request.id);
+        response(null, group);
+    },
+    GetAllGroups: (request, response) => {
+        response(null, {groups: groups});
+    }
+})
+
 server.bindAsync('127.0.0.1:9090', grpc.ServerCredentials.createInsecure(), (err, port) => {
     if (err) {
         console.error(err);
